@@ -1,0 +1,159 @@
+/***** Global Styles *****/
+
+
+@font-face {
+    font-family: Roboto ;
+    src: url(../fonts/Roboto/static/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: BenchNine;
+    src: url(../fonts/BenchNine/BenchNine-Regular.ttf);
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(../fonts/Oswald/Oswald-Bold.ttf);
+}
+:root{
+    --main-color:#ff206e;
+    --bg-light-gray:#f1f1f1;
+}
+
+body{
+    font-family: "lato","sans-serif";
+}
+
+h1,h2,h3,h4,h5,h6{
+   font-family: "Roboto","sans-serif";  
+}
+
+a{
+    text-decoration: none;
+    color:  inherit;
+}
+
+.main-color{
+ color: var(--main-color);
+}
+
+.bg-light-grey {
+    background-color: var(--bg-light-gray);
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+
+.ali p{
+    
+    font-family: Oswald;
+}
+
+
+
+
+/***** End Global Styles *****/
+
+
+/***** Navbar Styles *****/
+
+.my-nav .nav-link.active{
+    position: relative;
+    color: var(--main-color) !important;
+}
+
+
+.my-nav .nav-link.active::after{
+
+content: " ";
+width: 100%;
+height: 1.5px;
+display: inline-block;
+background-color: var(--main-color);
+position: absolute;
+bottom: 0;
+left: 0;
+
+}
+
+.my-nav .nav-link{
+    position: relative;
+}
+
+.my-nav .nav-link::after{
+
+content: " ";
+width: 0;
+height: 1.5px;
+display: inline-block;
+background-color: var(--main-color);
+position: absolute;
+bottom: 0;
+left: 0;
+transition: width 0.5s;
+
+}
+
+.my-nav .nav-link:hover::after{
+
+    width: 100%;
+}
+
+
+/***** End Navbar Styles *****/
+
+/***** Header Styles *****/
+
+.home{
+    height: 100vh;
+    background-image: url('../images/header-bg.jpg');
+    background-position:  center center;
+    background-size: cover;
+}
+
+.home-content{
+    margin-left: 150px;
+}
+
+/***** End Header Styles *****/
+
+/***** Testmonial Styles *****/
+
+.heading h3{
+
+    letter-spacing: 1px;
+    
+}
+.heading h4{
+    color:#E8E8E8 ;
+}
+.carousel-item .img img{
+    width: 100px ;
+    height: 100px;
+    border-radius: 50%;
+
+    transform: translateY(50%);
+}
+
+.carousel-indicators button{
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50% !important;
+    text-indent: 0 !important;
+}
+
+
+
+/***** End Testmonial Styles *****/
+
+
+
+/***** Services Styles *****/ 
+
+
+
+/***** End Services Styles *****/
+
